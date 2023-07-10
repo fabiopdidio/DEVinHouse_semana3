@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FGTS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="resultado.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resultado</h1>
+      <p id="resultado"></p>
+      <p id="resultadoAnual"></p>
+      <button>Calcular novamente</button>
+    </div>
+
+    <script>
+      // Obtém os valores dos parâmetros da URL
+      const url = new URL(window.location.href);
+      const resultado = parseFloat(url.searchParams.get("resultado")).toFixed(
+        2
+      );
+      const resultadoAnual = parseFloat(
+        url.searchParams.get("resultadoAnual")
+      ).toFixed(2);
+
+      // Exibe os resultados na página
+      const resultadoElement = document.getElementById("resultado");
+      const resultadoAnualElement = document.getElementById("resultadoAnual");
+
+      resultadoElement.textContent = "FGTS mensal R$" + resultado;
+      resultadoAnualElement.textContent = "FGTS anual R$" + resultadoAnual;
+
+      resultadoElement.style.backgroundColor = "lightblue";
+      resultadoAnualElement.style.backgroundColor = "lightgreen";
+    </script>
+  </body>
+</html>

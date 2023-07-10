@@ -1,0 +1,61 @@
+:root {
+  color: black;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 10px;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px grey;
+  border-radius: 5px;
+}
+
+.calculadora-imagem {
+  height: auto;
+  width: 150px;
+}
+
+button {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+}
+
+button:hover {
+  background-color: rgb(113, 39, 182);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 2px solid lightskyblue;
+  outline: 2px solid lightskyblue;
+  text-align: center;
+}
+
+input {
+    padding: 8px;
+    text-align: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Carta Salário</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/4470/4470631.png"
+        alt="Carta ícone"
+        class="imagem-carta"
+      />
+      <form class="formulario">
+        <label for="nome-funcionario">Nome do funcionário</label>
+        <input
+          type="text"
+          id="nome-funcionario"
+          placeholder="Digite o nome do funcionário"
+        />
+
+        <label for="data-inicio">Data de início</label>
+        <input
+          type="date"
+          id="data-inicio"
+          placeholder="Selecione a data de início"
+          style="color: rgb(113, 113, 113)"
+        />
+
+        <label for="data-final">Data do término</label>
+        <input
+          type="date"
+          id="data-final"
+          placeholder="Selecione a data do término"
+          style="color: rgb(113, 113, 113)"
+        />
+
+        <button class="button">Gerar carta</button>
+      </form>
+    </div>
+  </body>
+</html>
